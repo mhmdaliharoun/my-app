@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: my-python-app
-          image: YOUR_DOCKERHUB_USERNAME/my-python-app:latest
+          image: $DOCKERHUB_USERNAME/my-python-app:latest
           ports:
             - containerPort: 5000
           livenessProbe:               # k8s restarts the pod if this fails
